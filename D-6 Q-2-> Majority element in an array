@@ -1,0 +1,30 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int i,j,n,index;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0; i<n; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0; i<n; i++)
+    {
+        int count=0;
+        for(j=i+1; j<n; j++)
+        {
+            if(a[i]==a[j+1])
+            {
+                count++;
+            }
+        }
+    }
+    return 0;
+}
