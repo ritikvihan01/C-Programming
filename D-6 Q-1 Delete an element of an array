@@ -8,6 +8,7 @@
 
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    /* If no element found then print "No element found." */
     int n,i,j,k,x;
     scanf("%d",&n);
     int a[n];
